@@ -11,8 +11,8 @@
     }
   ],
   "routes": [
-    { "src": "/app-ads.txt", "dest": "app-ads.txt" },
+    { "src": "/app-ads.txt", "dest": "/app-ads.txt" },
     { "handle": "filesystem" },
-    { "src": "/.*", "dest": "index.html" }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 } 
