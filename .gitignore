@@ -1,0 +1,7 @@
+# Flutter
+build/
+# React
+website/node_modules/
+website/dist/
+# macOS
+.DS_Store
