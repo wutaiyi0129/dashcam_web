@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "dashcam",
+  "builds": [
+    {
+      "src": "website/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "website/dist"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/app-ads.txt", "dest": "website/public/app-ads.txt" },
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "website/dist/index.html" }
+  ]
+} 
